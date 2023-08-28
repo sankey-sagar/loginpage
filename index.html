@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    a{
+        color: red;
+    }
+</style>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span id="blue"></span>
+    <div class="login_home" id="blue green">
+        <div class="login_img">
+            <img src="static/img/1.jpg" alt="login_img">
+        </div>
+        <hr>
+        <div class="content">
+            <div class="inner">
+
+                <p>Welcome back</p>
+                <h1>Login to your account</h1>
+                <div class="form">
+                    <form  action="./validate.html" name="validation"  onsubmit="return validateForm()" method="post">
+                        <div id="email" class="formdesing">
+
+                            <label for="email">Email <br>
+                                <input type="email" id="email" name="email" placeholder="john.snow@gmail.com" required>
+                                <div class="formerror"></div>
+                            </label>
+                        </div>
+                    
+                        <br>
+                        <div id="pass">
+
+                            <label for="pass">Password <br>
+                                <input type="password" id="pass" name="pass" placeholder="************" required><br><br>
+                                <span class="formerror"></span>
+                            </label><br>
+                        </div>
+                        <!-- <p> Remember me </p> -->
+                        <label for="Rememberme">
+                            <input type="radio" name="Rememberme" id="rememberme" >
+                            Remember Me 
+                            <a id="forget" href=""> Forgot Password?</a>
+                        </label> <br>
+                    </div>
+                    <button id="loginbtn" type="submit" >Login now</button><br><br>
+                </form>
+                <button id="signinbtn"> <img src="./static/img/2.png" alt=""> Or sign-in with google</button>
+                <br><br><br><br>
+                <p >Do you have an account? <a  href="./API.html">Join free today</a></p>
+            </div>
+            </div>
+    </div>
+</body>
+<script src="./static/js/main.js"></script>
+</html>
