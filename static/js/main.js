@@ -16,8 +16,8 @@ function validateForm(){
         window.location.href = "http://127.0.0.1:5500/validate.html";
     }
     else if(email!="sagar.t@sankeysolutions.com" && pass!="sankey123"){
-        seterorr("email","Email is Incurrect");
-        seterorr("pass","Password is Incurrect");
+        seterorr("email","Email is Incorrect");
+        seterorr("pass","Password is Incorrect");
     }
     else if(email=="sagar.t@sankeysolutions.com" && pass!="sankey123"){
         seterorr("pass","Password is Incurrect");
